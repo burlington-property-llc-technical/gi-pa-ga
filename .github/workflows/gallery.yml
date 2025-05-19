@@ -26,6 +26,8 @@ jobs:
         run: echo "This sentence should echo to the logs."
       - name: Uncover PWD
         run: echo "PWD is $(pwd)"
+      - name: See local files
+        run: ls -la
       - name: Find index.html
         run: find . -name index.html
       - name: Package and upload artifact 📦
