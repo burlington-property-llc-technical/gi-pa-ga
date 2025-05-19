@@ -22,14 +22,14 @@ jobs:
           persist-credentials: false
       - name: Build Gallery 🔧
         run: docker run -v "$(pwd):/work" ghcr.io/thumbsup/thumbsup /bin/sh -c "cd /work/ && thumbsup --config config.json"
-      - name: Customize Gallery
-        run: echo "This sentence should echo to the logs."
       - name: Uncover PWD
         run: echo "PWD is $(pwd)"
       - name: See local files
         run: ls -la
       - name: Find index.html
         run: find . -name index.html
+      - name: Customize Gallery
+        run: bash inject_b.sh
       - name: Package and upload artifact 📦
         uses: actions/upload-pages-artifact@v3
         with:
