@@ -7,3 +7,13 @@ ul.burly {
   list-style: circle;
   padding-left: 40px;
 }
+
+.burly-nav a:link {
+    color:darkblue;
+    font-weight: bold;
+}
+
+.burly-nav a:visited {
+  color:blueviolet;
+  font-weight: bold;
+}
