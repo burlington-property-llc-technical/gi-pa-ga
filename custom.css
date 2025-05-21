@@ -8,7 +8,7 @@ ul.burly {
   padding-left: 40px;
 }
 
-.burly-nav li + li {
+.burly-nav li {
   margin-top: 10px;
 }
 
