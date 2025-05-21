@@ -8,6 +8,10 @@ ul.burly {
   padding-left: 40px;
 }
 
+.burly-nav li + li {
+  margin-top: 10px;
+}
+
 .burly-nav a:link {
     color:darkblue;
     font-weight: bold;
