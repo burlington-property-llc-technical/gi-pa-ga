@@ -2,3 +2,8 @@
 .burlyprop {
   color: orange;
 }
+
+.burlyprop ul {
+  list-style: circle;
+  padding-left: 40px;
+}
