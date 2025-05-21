@@ -3,7 +3,7 @@
   color: orange;
 }
 
-.burlyprop ul {
+ul.burly {
   list-style: circle;
   padding-left: 40px;
 }
