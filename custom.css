@@ -1,15 +1,15 @@
-/* Your custom styles goes here */
-.burlyprop {
-  color: orange;
-}
-
 ul.burly {
   list-style: circle;
   padding-left: 40px;
 }
 
 .burly-nav li {
-  margin-top: 10px;
+  margin: 10px;
+}
+
+.burly-nav p {
+  margin: 10px;
+  line-height: normal;
 }
 
 .burly-nav a:link {
