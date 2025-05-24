@@ -7,8 +7,12 @@ printenv
 
 echo "=== PWD: $PWD ==="
 
+OLDIFS=$IFS
+IFS=':'
+for dir in $PATH; do
+    ls -la *thumb*
+done
+IFS=$OLDIFS
 ls -la
 ls -la /
-ls -la /bin
-ls -la /sbin
-ls -la /usr/*bin
+
