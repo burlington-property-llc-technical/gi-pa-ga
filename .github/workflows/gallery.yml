@@ -21,7 +21,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Build Gallery 🔧
-        run: docker run -v "$(pwd):/work" ghcr.io/thumbsup/thumbsup /bin/sh -c "cd /work/ && bash docker_digger.sh && thumbsup --config config.json"
+        run: docker run -v "$(pwd):/work" ghcr.io/thumbsup/thumbsup /bin/sh -c "ls -la /bin/bash /bin/sh && cd /work/ && sh docker_digger.sh && thumbsup --config config.json"
       - name: Uncover PWD
         run: echo "PWD is $(pwd)"
       - name: See local files
