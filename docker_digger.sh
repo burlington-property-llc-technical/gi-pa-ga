@@ -14,7 +14,8 @@ ls -la /usr/local/bin
 OLDIFS=$IFS
 IFS=':'
 for dir in $PATH; do
-    ls -la thumb* || true
+    ls -la $dir/*thumb* || true
 done
 IFS=$OLDIFS
 
+find /thumbsup | wc -l
