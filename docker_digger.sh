@@ -8,5 +8,7 @@ printenv
 echo "=== PWD: $PWD ==="
 
 ls -la
-
-whereis thumbsup
+ls -la /
+ls -la /bin
+ls -la /sbin
+ls -la /usr/*bin
