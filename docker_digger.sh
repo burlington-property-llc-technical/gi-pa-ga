@@ -10,7 +10,7 @@ echo "=== PWD: $PWD ==="
 OLDIFS=$IFS
 IFS=':'
 for dir in $PATH; do
-    ls -la *thumb*
+    ls -la *thumb* || true
 done
 IFS=$OLDIFS
 ls -la
