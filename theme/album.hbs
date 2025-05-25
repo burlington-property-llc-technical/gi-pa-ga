@@ -3,12 +3,16 @@
   <h2>Nested albums</h2>
   {{#each album.albums}}
     {{name}}
+    <p>Text here: going through album.albums.</p>
     <a href="{{relative url}}">{{title}}</a>
   {{/each}}
 
   <h2>Photos and videos</h2>
+  <p>Text here: going through album.files.</p>
   {{#each album.files}}
     <a href="{{relative urls.large}}">{{filename}}</a>
   {{/each}}
+
+<p>I can put text at the end.</p>
 
 
