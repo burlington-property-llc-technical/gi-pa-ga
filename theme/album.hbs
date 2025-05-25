@@ -1,0 +1,14 @@
+{{#with album}}
+  <h1>{{title}}</h1>
+
+  <h2>Nested albums</h2>
+  {{#each albums}}
+    <a href="{{relative url}}">{{title}}</a>
+  {{/each}}
+
+  <h2>Photos and videos</h2>
+  {{#each files}}
+    <a href="{{relative urls.large}}">{{filename}}</a>
+  {{/each}}
+
+{{#endwith}}
