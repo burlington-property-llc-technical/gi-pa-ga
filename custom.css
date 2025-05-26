@@ -38,17 +38,18 @@ body {
 }
 
 header {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 40px;
-  color: #F3F3F3;
   justify-content: center;
   align-items: center;
   background-color: #4276B6;
-  content: "Spacious residential living in South Squirrel Hill";
+  margin-left: -500px;
+  margin-right: -500px;
 }
 
 header h1 {
-  font-style: italic; /* just a test to see if we can target h1 inside header like this */
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  color: #F3F3F3;
 }
 
 breadcrumbs {
