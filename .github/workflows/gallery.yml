@@ -29,7 +29,7 @@ jobs:
       - name: Find index.html
         run: find . -name index.html
       - name: Customize Gallery
-        run: sudo bash inject_b.sh
+        run: sudo bash customize_html.sh
       - name: Package and upload artifact 📦
         uses: actions/upload-pages-artifact@v3
         with:
