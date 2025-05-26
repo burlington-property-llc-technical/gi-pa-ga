@@ -22,12 +22,6 @@ jobs:
           persist-credentials: false
       - name: Build Gallery 🔧
         run: docker run -v "$(pwd):/work" ghcr.io/thumbsup/thumbsup /bin/sh -c "ls -la /bin/sh && cd /work/ && sh docker_digger.sh && thumbsup --config config.json"
-      - name: Uncover PWD
-        run: echo "PWD is $(pwd)"
-      - name: See local files
-        run: ls -la
-      - name: Find index.html
-        run: find . -name index.html
       - name: Customize Gallery
         run: sudo bash customize_html.sh
       - name: Package and upload artifact 📦
