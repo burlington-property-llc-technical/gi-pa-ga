@@ -1,6 +1,13 @@
+/* Begin Burlington Property LLC customization. */
 ul.burly {
   list-style: circle;
   padding-left: 40px;
+}
+
+.burly-nav {
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .burly-nav li {
@@ -95,4 +102,8 @@ nav.breadcrumbs::before {
 
 div.date { /* don't show date */
  display: none;
+}
+
+footer {
+  text-align: center;
 }
