@@ -22,5 +22,15 @@ sudo cp -i ${JSFILE} build_output/public/
 # The <footer> tag seems a reasonable place in the thumbsup output
 sed -i -e 's|<footer>|<script src="public/'"${JSFILE}"'"></script>\n      <footer>|' build_output/index.html
 
+inject_html "build_output/index.html" "index_desc.html"
+
 echo "Ending line count of index.html: $(wc -l build_output/index.html)"
 
+# inject_html target_file contents_file
+inject_html() {
+    echo "Inside inject_html"
+    TARGET=$0
+    CONTENTS=$1
+    SCRIPT_NAME=$(echo "$CONTENTS" | sed -e 's/[.]html$/.js/')
+    echo "Creating ${SCRIPT_NAME}"
+}
