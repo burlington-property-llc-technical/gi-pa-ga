@@ -28,10 +28,11 @@ body {
   align-items: center;   /* Centers vertically */
   min-height: 100vh;     /* Ensures the body takes at least the full viewport height */
   margin: 0;             /* Removes default body margin */
+  background-color: lightslategrey; /* Optional: for visibility */
 }
 
 #container {
   /* Add your desired width and height for the container */
   /* e.g., width: 300px; height: 200px; */
-  background-color: lightblue; /* Optional: for visibility */
+  background-color: white; /* Optional: for visibility */
 }
