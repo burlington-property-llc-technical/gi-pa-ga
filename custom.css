@@ -45,10 +45,11 @@ header {
   margin-right: -500px;
 }
 
-header h1 {
+header h1 a {
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
   font-size: 40px;
+  text-align: center;
   color: #F3F3F3;
 }
 
