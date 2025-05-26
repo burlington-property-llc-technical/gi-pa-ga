@@ -42,6 +42,15 @@ header {
   font-size: 2em;
   justify-content: center;
   align-items: center;
+  background-color: #4276B6;
+}
+
+breadcrumbs {
+  background-color: gold;
+}
+
+nav.breadcrumbs {
+  background-color: aqua;
 }
 
 #albums {
