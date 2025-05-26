@@ -26,7 +26,8 @@ inject_html() {
 # Prove we can access build_output/index.html
 echo "Starting line count of index.html: $(wc -l build_output/index.html)"
 
-inject_html "build_output/index.html" "index_desc.html"
+inject_html "build_output/index.html" "desc_index.html"
+inject_html "build_output/Unit-2.html" "desc_u2.html"
 
 # Contents of build_output
 ls -la build_output/
