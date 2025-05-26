@@ -21,3 +21,17 @@ ul.burly {
   color:blueviolet;
   font-weight: bold;
 }
+
+body {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;   /* Centers vertically */
+  min-height: 100vh;     /* Ensures the body takes at least the full viewport height */
+  margin: 0;             /* Removes default body margin */
+}
+
+#container {
+  /* Add your desired width and height for the container */
+  /* e.g., width: 300px; height: 200px; */
+  background-color: lightblue; /* Optional: for visibility */
+}
