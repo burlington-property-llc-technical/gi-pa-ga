@@ -95,9 +95,7 @@ nav.breadcrumbs::before {
 }
 
 #albums {
-  /* display: flex; */
-  justify-content: center; /* Centers horizontally */
-  align-items: center;   /* Centers vertically */
+  text-align: center;
 }
 
 div.date { /* don't show date */
