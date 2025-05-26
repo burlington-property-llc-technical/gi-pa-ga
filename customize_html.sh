@@ -1,14 +1,18 @@
 #!/bin/bash
 
 set -e  # Exit on first error
+set -x  # Echo invoked commands
 
 # inject_html target_file contents_file
 inject_html() {
-    echo "Inside inject_html"
     TARGET=$0
     CONTENTS=$1
+    echo "inject_html invoked: ${TARGET} ${CONTENTS}"
+
     JSFILE=$(echo "$CONTENTS" | sed -e 's/[.]html$/.js/')
     echo "Creating ${JSFILE}"
+
+
 
     # https://stackoverflow.com/questions/7189604/replacing-html-tag-content-using-sed
     # https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file
