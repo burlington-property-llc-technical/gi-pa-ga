@@ -1,6 +1,5 @@
-# Github Pages Gallery
+# Website for Burlington Property LLC
 
-This repo is an experiment at trying to use https://github.com/gautamkrishnar/github-pages-gallery/blob/master/README.md
+Live at https://burlingtonpropertyllc.com
 
-Resulting page: https://burlington-property-llc-technical.github.io/gi-pa-ga/
-
+This is based on https://github.com/gautamkrishnar/github-pages-gallery/blob/master/README.md
