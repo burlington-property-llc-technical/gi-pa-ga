@@ -50,9 +50,6 @@ header {
   align-items: center;   /* Centers vertically */
 }
 
-div.summary { /* don't show photo count */
- display: none;
-}
 div.date { /* don't show date */
  display: none;
 }
