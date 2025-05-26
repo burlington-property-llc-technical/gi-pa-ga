@@ -23,7 +23,7 @@ ul.burly {
 }
 
 body {
-  /*display: flex;*/
+  display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center;   /* Centers vertically */
   min-height: 100vh;     /* Ensures the body takes at least the full viewport height */
@@ -55,7 +55,7 @@ nav.breadcrumbs {
 }
 
 #albums {
-  display: flex;
+  /* display: flex; */
   justify-content: center; /* Centers horizontally */
   align-items: center;   /* Centers vertically */
 }
