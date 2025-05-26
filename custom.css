@@ -36,3 +36,7 @@ body {
   /* e.g., width: 300px; height: 200px; */
   background-color: white; /* Optional: for visibility */
 }
+
+header {
+  font-family: 'Courier New', Courier, monospace;
+}
