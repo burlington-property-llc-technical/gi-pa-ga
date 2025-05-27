@@ -44,6 +44,7 @@ body {
 
 header {
   text-align: center;
+  margin: 0;
 }
 
 header h1 {
@@ -73,6 +74,7 @@ header h1 a {
 
 .breadcrumb-item {
   color: #F3F3F3;
+  font-size: 34px;
 }
 
 nav.breadcrumbs {
@@ -80,6 +82,8 @@ nav.breadcrumbs {
   z-index: 1;
   text-align: center;
   font-weight: bold;
+  color: #F3F3F3;
+  font-size: 34px;
 }
 
 nav.breadcrumbs::before {
