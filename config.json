@@ -8,7 +8,7 @@
   "cleanup": true,
   "theme": "cards",
   "theme-style": "./custom.css",
-  "footer": "Copyright 2025 Burlington Property LLC. All rights reserved.",
+  "footer": "Copyright 2025 <b>Burlington Property LLC</b>. All rights reserved.",
   "usage-stats": false,
   "thumb-size": 300,
   "home-album-name": "2021 Wendover St"
