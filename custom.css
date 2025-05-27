@@ -50,7 +50,7 @@ header {
 header h1 {
   position: relative; /* Establishes a positioning context for the pseudo-element */
   z-index: 1; /* Ensures the text is above the background */
-  padding: 10px 0; /* Add some padding so text isn't at the very edge */
+  padding: 20px 0; /* Add some padding so text isn't at the very edge */
 }
 
 header h1::before {
@@ -74,10 +74,12 @@ header h1 a {
 
 .breadcrumb-item {
   color: #F3F3F3;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 34px;
 }
 
 nav.breadcrumbs {
+  margin: 0 0 5pt 0;
   position: relative;
   z-index: 1;
   text-align: center;
