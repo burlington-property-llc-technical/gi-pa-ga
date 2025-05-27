@@ -8,7 +8,7 @@
   "cleanup": true,
   "theme": "cards",
   "theme-style": "./custom.css",
-  "footer": "Copyright 2025 <b>Burlington Property LLC</b>. All rights reserved.",
+  "footer": '<p>Contact us to arrange a tour or a virtual tour. We can do evenings and weekends.<br><a href="mailto:manager@burlingtonpropertyllc.com">manager@burlingtonpropertyllc.com</a><br>412-267-7233</p>',
   "usage-stats": false,
   "thumb-size": 300,
   "home-album-name": "2021 Wendover St"
