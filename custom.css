@@ -31,8 +31,7 @@ ul.burly {
 
 .burly-lls a {
   width: 350px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   padding: 1px 6px;
   border: 1px outset buttonborder;
   border-radius: 3px;
@@ -40,6 +39,7 @@ ul.burly {
   color: white;
   background-color: blue;
   text-decoration: none;
+  text-align: center;
 }
 
 body {
