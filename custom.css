@@ -33,12 +33,13 @@ ul.burly {
   width: 350px;
   margin-left: auto;
   margin-right: auto;
-    padding: 1px 6px;
-    border: 1px outset buttonborder;
-    border-radius: 3px;
-    color: white;
-    background-color: blue;
-    text-decoration: none;
+  padding: 1px 6px;
+  border: 1px outset buttonborder;
+  border-radius: 3px;
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  text-decoration: none;
 }
 
 body {
