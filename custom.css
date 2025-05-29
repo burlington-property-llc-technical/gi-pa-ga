@@ -19,13 +19,13 @@ ul.burly {
   line-height: normal;
 }
 
-.burly-nav a:link {
+.burly-a a:link {
     color:darkblue;
     font-weight: bold;
 }
 
-.burly-nav a:visited {
-  color:blueviolet;
+.burly-a a:visited {
+  color:darkslateblue;
   font-weight: bold;
 }
 
