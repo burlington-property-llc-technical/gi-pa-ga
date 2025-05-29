@@ -29,7 +29,10 @@ ul.burly {
   font-weight: bold;
 }
 
-.burly-lls {
+.burly-lls a {
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
     padding: 1px 6px;
     border: 1px outset buttonborder;
     border-radius: 3px;
