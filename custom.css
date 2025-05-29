@@ -69,6 +69,7 @@ header h1 {
   position: relative; /* Establishes a positioning context for the pseudo-element */
   z-index: 1; /* Ensures the text is above the background */
   padding: 20px 0; /* Add some padding so text isn't at the very edge */
+  font-size: 24px;
 }
 
 header h1::before {
