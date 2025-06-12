@@ -55,6 +55,11 @@ ul.burly {
   text-align: center;
 }
 
+.burly-lls a.visited {
+  color: antiquewhite;
+}
+
+
 body {
   min-height: 100vh;     /* Ensures the body takes at least the full viewport height */
   margin: 0;             /* Removes default body margin */
