@@ -42,7 +42,7 @@ ul.burly {
   text-align: center;
 }
 
-.burly-lls a {
+.burly-lls a:link {
   width: 350px;
   margin: auto;
   padding: 1px 6px;
@@ -55,7 +55,7 @@ ul.burly {
   text-align: center;
 }
 
-.burly-lls a.visited {
+.burly-lls a:visited {
   color: antiquewhite;
 }
 
