@@ -27,9 +27,9 @@ inject_html() {
 echo "Starting line count of index.html: $(wc -l build_output/index.html)"
 
 inject_html "build_output/index.html" "desc_index.html"
-inject_html "build_output/Apartment-2.html" "desc_u2.html"
+#inject_html "build_output/Apartment-2.html" "desc_u2.html"
 inject_html "build_output/Apartment-4.html" "desc_u4.html"
-inject_html "build_output/Apartment-5.html" "desc_u5.html"
+#inject_html "build_output/Apartment-5.html" "desc_u5.html"
 
 # Contents of build_output
 ls -la build_output/
