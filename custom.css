@@ -1,145 +1,446 @@
 /* Begin Burlington Property LLC customization. */
+
+/* Modern Typography */
+:root {
+  --primary-color: #6366f1;
+  --primary-hover: #4f46e5;
+  --text-dark: #1f2937;
+  --text-medium: #4b5563;
+  --text-light: #6b7280;
+  --bg-light: #f9fafb;
+  --bg-white: #ffffff;
+  --border-light: #e5e7eb;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --header-main: #e0e7ff;
+  --header-breadcrumb: #dbeafe;
+}
+
 ul.burly {
-  list-style: circle;
-  padding-left: 40px;
+  list-style: none;
+  padding-left: 0;
+  margin: 1.5rem 0;
+}
+
+ul.burly li {
+  padding: 0.5rem 0;
+  padding-left: 1.75rem;
+  position: relative;
+  line-height: 1.7;
+  color: var(--text-dark);
+  font-size: 1rem;
+}
+
+ul.burly li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
 .burly-nav {
-  width: 650px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+}
+
+.burly-table-thumbs-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.burly-table-wrapper {
+  flex: 0 0 auto;
+}
+
+.burly-thumbs-placeholder {
+  flex: 1;
+  min-width: 300px;
+}
+
+.burly-availability {
+  width: 100%;
+  max-width: 400px;
+  border-collapse: collapse;
+  background-color: var(--bg-white);
+  box-shadow: var(--shadow-sm);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.burly-availability thead {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.burly-availability th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.025em;
+}
+
+.burly-availability td {
+  padding: 0.875rem 1rem;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.burly-availability tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.burly-availability tbody tr:hover {
+  background-color: var(--bg-light);
 }
 
 .burly-nav li {
-  margin: 10px;
+  margin: 0.5rem 0;
 }
 
 .burly-nav p {
-  margin: 10px;
-  line-height: normal;
+  margin: 1rem 0;
+  line-height: 1.8;
+  color: var(--text-dark);
+  font-size: 1.0625rem;
 }
 
-.burly-nav a:link {
-    color:darkblue;
+.burly-nav p:first-of-type {
+  font-size: 1.1875rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  margin-top: 0;
 }
 
+.burly-nav a:link,
 .burly-nav a:visited {
-    color:darkslateblue;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  border-bottom: 1px solid transparent;
+  display: inline;
+  padding: 0;
+  margin: 0;
 }
 
-.burly-a a:link {
-    color:darkblue;
-    font-weight: bold;
+.burly-nav a:hover {
+  color: var(--primary-hover);
+  border-bottom-color: var(--primary-hover);
 }
 
+.burly-a a:link,
 .burly-a a:visited {
-  color:antiquewhite;
-  font-weight: bold;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.burly-a a:hover {
+  color: var(--primary-hover);
 }
 
 .burly-lls h1 {
-  margin: auto;
+  margin: 2rem auto;
   text-align: center;
 }
 
-.burly-lls a:link {
-  width: 350px;
-  margin: auto;
-  padding: 1px 6px;
-  border: 1px outset buttonborder;
-  border-radius: 3px;
-  font-size: 24px;
+.burly-lls a:link,
+.burly-lls a:visited {
+  display: inline-block;
+  width: auto;
+  max-width: 350px;
+  margin: 1rem auto;
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  font-weight: 600;
   color: white;
-  background-color: blue;
+  background-color: var(--primary-color);
   text-decoration: none;
   text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: all 0.2s ease;
 }
 
-.burly-lls a:visited {
-  color: antiquewhite;
+.burly-lls a:hover {
+  background-color: var(--primary-hover);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-1px);
 }
 
 
 body {
-  min-height: 100vh;     /* Ensures the body takes at least the full viewport height */
-  margin: 0;             /* Removes default body margin */
-  background-color: lightslategrey; /* Optional: for visibility */
-  overflow-x: hidden; /* Prevents horizontal scrollbar if 100vw is slightly off */
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--bg-light);
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #container {
-  /* Add your desired width and height for the container */
-  /* e.g., width: 300px; height: 200px; */
-  background-color: #fbfbfb; /* Optional: for visibility */
+  background-color: var(--bg-white);
+  box-shadow: var(--shadow-sm);
 }
 
 header {
   text-align: center;
   margin: 0;
+  background: var(--header-main);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50vw);
+  width: 150vw;
+  height: 100%;
+  background: inherit;
+  z-index: -1;
+}
+
+.burly-logo {
+  height: 120px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 header h1 {
-  position: relative; /* Establishes a positioning context for the pseudo-element */
-  z-index: 1; /* Ensures the text is above the background */
-  padding: 20px 0; /* Add some padding so text isn't at the very edge */
-  font-size: 24px;
-}
-
-header h1::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%; /* Start from the horizontal center of the h1 */
-  transform: translateX(-50vw); /* Shift left by half the viewport width */
-  width: 150vw; /* Full viewport width + the half again */
-  height: 100%;
-  background-color: #4276B6; /* Your desired background color */
-  z-index: -1; /* Places the background behind the text */
+  padding: 2rem 1rem 0.25rem 1rem;
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 header h1 a {
-  font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 40px;
-  color: #F3F3F3;
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-size: 2.75rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+  transition: opacity 0.2s ease;
+  display: block;
+}
+
+header h1 a:hover {
+  opacity: 0.9;
+}
+
+header h1 a::after {
+  content: "The perfect place to live in Squirrel Hill";
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-medium);
+  margin-top: 0.5rem;
+  letter-spacing: 0;
 }
 
 .breadcrumb-item {
-  color: #F3F3F3;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 34px;
+  color: var(--text-dark);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
 }
 
 nav.breadcrumbs {
-  margin: 0 0 5pt 0;
-  position: relative;
-  z-index: 1;
+  margin: 0;
+  padding: 0.5rem 1rem 1.5rem 1rem;
   text-align: center;
-  font-weight: bold;
-  color: #F3F3F3;
-  font-size: 34px;
+  font-weight: 500;
+  color: var(--text-dark);
+  font-size: 1.125rem;
+  background: transparent;
 }
 
-nav.breadcrumbs::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%; /* Start from the horizontal center of the h1 */
-  transform: translateX(-50vw); /* Shift left by half the viewport width */
-  width: 150vw; /* Full viewport width + the half again */
-  height: 100%;
-  background-color: #4276B6; /* Your desired background color */
-  z-index: -1; /* Places the background behind the text */
+nav.breadcrumbs a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav.breadcrumbs a:hover {
+  color: var(--primary-hover);
 }
 
 #albums {
   text-align: center;
+  padding: 0;
+  max-width: 100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
 }
 
-div.date { /* don't show date */
- display: none;
+#albums a {
+  width: 150px;
+  height: 150px;
+  min-width: 150px;
+  min-height: 150px;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+#albums a .info {
+  font-size: 0.875rem;
+}
+
+#albums a h3 {
+  font-size: 1rem;
+}
+
+/* Style heading sections */
+.burly-nav h1,
+.burlyprop {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 2.5rem 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--primary-color);
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  letter-spacing: 0.05em;
+}
+
+.burly-nav h1:first-of-type,
+.burlyprop:first-of-type {
+  margin-top: 1.5rem;
+}
+
+/* Nested lists */
+ul.burly ul.burly {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Contact section styling */
+.burly-nav p:last-of-type {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding: 1.25rem;
+  background-color: var(--bg-light);
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
+  font-size: 1rem;
+}
+
+/* Gallery cards enhancement */
+.album,
+.media {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.album:hover,
+.media:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Center gallery images */
+#media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+div.date {
+  display: none;
 }
 
 footer {
   text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  font-size: 0.875rem;
+  border-top: 1px solid var(--border-light);
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .burly-nav {
+    padding: 1.5rem 1rem;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .burly-logo {
+    height: 80px;
+  }
+
+  header h1 a {
+    font-size: 1.75rem;
+  }
+
+  header h1 a::after {
+    font-size: 1rem;
+  }
+
+  .burly-nav h1,
+  .burlyprop {
+    font-size: 1.25rem;
+  }
+
+  nav.breadcrumbs {
+    font-size: 1rem;
+  }
+
+  .burly-table-thumbs-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .burly-table-wrapper {
+    width: 100%;
+  }
+
+  .burly-availability {
+    max-width: 100%;
+  }
+
+  #albums {
+    justify-content: center;
+  }
 }
