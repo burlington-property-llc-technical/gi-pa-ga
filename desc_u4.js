@@ -1,0 +1,39 @@
+document.write('\
+<div class="burly-nav">\
+\
+<h1 class="burly-lls"><a class="burly-lls" href="https://listings.landlordstudio.com/listings/37d1daac7a8a4239a14c1e3f75682e80">Get in touch</a></h1>\
+\
+<p>Charming all-brick building in the heart of Squirrel Hill.</p>\
+\
+<p>Rent includes water, sewage and trash. <br>\
+Tenant covers Gas & Electric.<br>\
+Security deposit is one month\'s rent.</p>\
+\
+<h1 class="burlyprop">UNIT 4 FEATURES -- COMPLETELY REFRESHED</h1>\
+<br>\
+<ul class="burly">\
+  <li>New kitchen countertops</li>\
+  <li>Brand new stainless steel refrigerator</li>\
+  <li>Brand new stainless steel dishwasher and garbage disposal</li>\
+  <li>Brand new bathroom vanity, sink, medicine cabinet</li>\
+  <li>Brand new bathroom shower real tile surround</li>\
+  <li>Brand new flooring in one bedroom and front living room</li>\
+  <li>Freshly painted throughout</li>\
+  <li>All new light fixtures</li>\
+  <li>Private balcony overlooking the front of the building</li>\
+  <li>Large windows with excellent natural light</li>\
+</ul>\
+\
+<p>Contact us to arrange a tour or a virtual tour. We can do evenings and weekends.<br>\
+<a class="burly-nav" href="mailto:manager@burlingtonpropertyllc.com">manager@burlingtonpropertyllc.com</a><br>\
+412-267-7233</p>\
+\
+<h1 class="burlyprop">ABSOLUTELY NO SMOKING</h1>\
+\
+<p>We have a video tour of Unit 5. It is the mirror image of Unit 4 which is listed here.</p>\
+\
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KVUWY-eY7xg?si=0ZhTBnsy4HcAFvnN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>\
+\
+</div>\
+\
+');

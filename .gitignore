@@ -1,3 +1,6 @@
+# Custom
+build_output/
+
 # Logs
 logs
 *.log
