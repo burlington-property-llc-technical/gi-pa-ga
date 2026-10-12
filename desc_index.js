@@ -11,7 +11,7 @@ document.write('\
       <tbody>\
         <tr>\
           <td>Apartment 2</td>\
-          <td>Leased</td>\
+          <td>Available Feb 1, 2027</td>\
         </tr>\
         <tr>\
           <td>Apartment 3</td>\
