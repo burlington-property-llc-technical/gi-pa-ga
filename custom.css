@@ -107,6 +107,21 @@ ul.burly li::before {
   background-color: var(--bg-light);
 }
 
+.burly-availability a.burly-available {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  background-color: #22e03a;
+  color: #0b2e10;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.burly-availability a.burly-available:hover {
+  background-color: #1bc22f;
+  text-decoration: underline;
+}
+
 .burly-nav li {
   margin: 0.5rem 0;
 }
