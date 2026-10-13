@@ -412,6 +412,18 @@ footer {
   border-top: 1px solid var(--border-light);
 }
 
+footer a.burly-github {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--text-light);
+  line-height: 0;
+  transition: color 0.2s ease;
+}
+
+footer a.burly-github:hover {
+  color: var(--text-dark);
+}
+
 /* Responsive improvements */
 @media (max-width: 768px) {
   .burly-nav {
